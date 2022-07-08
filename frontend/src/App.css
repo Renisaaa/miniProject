@@ -1,0 +1,131 @@
+.homePageWrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+
+.formWrapper {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* padding: 177px 130px 33px 95px; */
+}
+
+.login100-pic {
+  width: 316px;
+}
+
+.login100-pic img {
+  max-width: 100%;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  
+}
+
+.inputGroup {
+display: flex;
+flex-direction: column;
+}
+
+.mainLabel{
+  margin-bottom: 20px;
+  margin-top: -20px;
+  font-family: Poppins-Bold;
+  font-size: 50px;
+  color: #fff;
+  width: 100%;
+  display: block;
+}
+
+
+
+.inputBox{
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submitbtn{
+  background: rgb(13, 218, 13);
+  width: 100px;
+  margin-inline: auto;
+  border: none;
+  
+}
+
+.formsubmit{
+  background: rgb(13, 218, 13);
+  width: 100px;
+  margin-inline: auto;
+  border: none;
+}
+
+.submitbtn:hover{
+ background: #2b824c;
+}
+
+.createInfo{
+  align-content: center;
+  margin: center;
+  margin-top: 100px;
+  margin-inline: auto;
+  
+}
+
+.createNewBtn{
+  color: #4aed88;
+  text-decoration: none;
+  border-bottom: 1px solid #4aed88;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.createNewBtn:hover {
+  color: #368654;
+  border-color: #368654;
+}

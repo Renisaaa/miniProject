@@ -26,10 +26,10 @@ mongoose.connect("mongodb://localhost:27017/mybackendDB",
       const User = new mongoose.model("User" ,userSchema)
 
 
-      //routes
+      routes
       app.post("/login", (req, res)=> {
-        const { email, password} = req.body
-        User.findOne({ email: email}, (err, user) => {
+        const { username, password} = req.body
+        User.findOne({ username: username}, (err, user) => {
             if(user){
                 if(password === user.password ) {
                     res.send({message: "Login Successfull", user: user})
@@ -43,15 +43,17 @@ mongoose.connect("mongodb://localhost:27017/mybackendDB",
     }) 
     
     app.post("/register", (req, res)=> {
-        const { name, email, password} = req.body
-        User.findOne({email: email}, (err, user) => {
+        const { username, Email, password, Section, body} = req.body
+        User.findOne({Email: Email, username: username}, (err, user) => {
             if(user){
                 res.send({message: "User already registerd"})
             } else {
                 const user = new User({
-                    name,
-                    email,
-                    password
+                    username,
+                    Email,
+                    password,
+                    Section,
+                    body
                 })
                 user.save(err => {
                     if(err) {
@@ -64,6 +66,8 @@ mongoose.connect("mongodb://localhost:27017/mybackendDB",
         })
         
     }) 
+
+ 
 
       app.listen(9002,() => {
       

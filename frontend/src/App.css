@@ -14,10 +14,10 @@
   align-items: center;
   padding: 15px;
   background: #9053c7;
-  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
-  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
-  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -webkit-linear-gradient(-135deg, #5650c8, #0b1859);
+  background: -o-linear-gradient(-135deg, #5650c8, #0b1859);
+  background: -moz-linear-gradient(-135deg, #5650c8, #0b1859);
+  background: linear-gradient(-135deg, #5650c8, #0b1859);
 }
 
 
@@ -128,4 +128,55 @@ flex-direction: column;
 .createNewBtn:hover {
   color: #368654;
   border-color: #368654;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px;
+  min-height: 30rem;
+  
+  }
+
+form {
+  max-width: 350px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 3px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+.name-field {
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.name-field-field {
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.render-chat {
+  max-width: 350px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 3px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+h3 {
+  color: #2f72da;
+}
+
+span {
+  color: black;
 }

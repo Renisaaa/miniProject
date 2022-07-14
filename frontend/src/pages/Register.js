@@ -20,13 +20,11 @@ const Register = () => {
     
 
     const handleChange = e => {
-        const {name, value } = e.target
+        const { name, value } = e.target
         setUser({
             ...user,
             [name]: value
-           
         })
-        
     }
 
 
@@ -36,7 +34,10 @@ const Register = () => {
         console.log(username);
         if ( username && Email && batch && Section && password ){
         axios.post("http://localhost:9002/Register", user)
-        .then(res => console.log(res))
+        .then(res => {
+            alert(res.data.message);
+            <NavLink to="/"></NavLink>
+        })
         } else {
           alert("invalid input")
         }}
@@ -127,7 +128,7 @@ const Register = () => {
 
                             <span className='createInfo'>
                                  Already Have An Account &nbsp;
-                                 <NavLink to="/Login" className='createNewBtn' >
+                                 <NavLink to="/" className='createNewBtn' >
                                    < br />Log In
                                 </NavLink>
                             </span>

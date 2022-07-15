@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import axios from "axios"
 
 const Register = () => {
+    
 
     const [user, setUser] =useState({
         "username": "",
@@ -12,6 +13,8 @@ const Register = () => {
         "password":""
         
     });
+
+  
 
     useEffect(() => {
         console.log(user);

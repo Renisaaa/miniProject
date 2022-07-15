@@ -26,7 +26,7 @@ mongoose.connect("mongodb://localhost:27017/mybackendDB",
       const User = new mongoose.model("User" ,userSchema)
 
 
-      routes
+    //   routes
       app.post("/login", (req, res)=> {
         const { username, password} = req.body
         User.findOne({ username: username}, (err, user) => {

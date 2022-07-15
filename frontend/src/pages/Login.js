@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 
 const Login = ( {setLoginUser}) => {
 
-
+     const nav = useNavigate();
     const [user, setUser] =useState({
         "username": "",
         "password":""
@@ -26,12 +26,18 @@ const Login = ( {setLoginUser}) => {
         
     }
 
+  
+
     const Login =() => {
         axios.post("http://localhost:9002/Login", user)
         .then(res => {
             alert(res.data.message)
             setLoginUser(res.data.user);
-            <NavLink to="/"> </NavLink>
+            nav(`/Message/${user}`, {
+                state: {
+                    user,
+                }            
+            })
            
         })
        }
